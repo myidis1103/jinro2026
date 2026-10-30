@@ -510,11 +510,9 @@
                 result3: topRecommendations[2] ? topRecommendations[2].school.name : "없음"
             };
 
-            // 💡 [중요] 복사해둔 구글 앱스 스크립트 웹앱 URL을 아래 따옴표 안에 붙여넣으세요!
-            const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyAmU0NDVVOz6-KVtBR-OaIl-J4NlkYPU-oK9ve2nVhLeU9gdDg3c1RnILABOEWnpOo/exec";
-
-            // URL이 제대로 입력되었을 때만 전송하도록 처리
-            if (GOOGLE_SCRIPT_URL !== "여기에_3단계에서_복사한_웹앱_URL을_붙여넣으세요") {
+         
+          // URL이 제대로 입력되었을 때만 전송하도록 처리
+            if (GOOGLE_SCRIPT_URL !== "https://script.google.com/macros/s/AKfycbyAmU0NDVVOz6-KVtBR-OaIl-J4NlkYPU-oK9ve2nVhLeU9gdDg3c1RnILABOEWnpOo/exec") {
                 fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
                     mode: 'no-cors', 
